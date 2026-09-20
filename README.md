@@ -75,7 +75,7 @@ Security should not become a collection of controls nobody understands.
 
 For me, security starts with understanding the business first: what matters, what is at stake, the systems that support it, the risks, the constraints, and above all, the people who rely on them.
 
-If you can't explain what you're doing in simple words, or teach it to others in a way they can understand, then you're probably building the rocket from *Tintin on the Moon* :)
+If you can't explain what you're doing in simple words, or teach it to others in a way they can understand, then you're probably missing your cyberdefense objective.
 
 The person being protected is part of the solution, not the problem.
 
