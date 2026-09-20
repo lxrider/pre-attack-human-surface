@@ -16,6 +16,22 @@ What matters is whether observations become repeated, consistent and difficult t
 
 Avoid profiling people based on appearance, clothing, origin or behaviour alone.
 
+## Public spaces and transport
+
+Public transport, airports, stations, hotels and other shared spaces can expose more information than expected.
+
+Keep simple habits:
+
+- avoid discussing sensitive subjects where others can easily listen;
+- be aware of what is visible on laptop and phone screens, and use a privacy filter when appropriate;
+- avoid displaying badges, documents or other information that reveals unnecessary context;
+- lock your workstation whenever you leave it unattended — `Win + L` on Windows or `Control + Command + Q` on macOS is a good rule of thumb;
+- treat public or unknown Wi-Fi networks as untrusted and avoid sensitive activity unless the connection is appropriately protected.
+
+The point is not to become suspicious of everyone around you.
+
+It is simply to avoid giving away useful information unnecessarily.
+
 ## If something genuinely concerns you
 
 Keep the response simple.
