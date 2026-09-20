@@ -1,8 +1,36 @@
 # Defensive OSINT
 
-The goal is simple: see your public exposure before an attacker does, then decide what to change.
+The goal is simple: see what an attacker can learn before they act.
 
-Information becomes dangerous when it reveals one of five things:
+Start with the problem, not the search engine.
+
+## What matters?
+
+Think about the threat, the attacker's objective and the potential impact.
+
+**Threat** — What are we protecting against?
+
+For example: targeted social engineering, credential theft, fraud or unauthorized access.
+
+**Objective** — What is the attacker trying to achieve?
+
+For example: impersonate someone, obtain privileged access, trigger a fraudulent payment or reach a production environment.
+
+**Impact** — What could happen if they succeed?
+
+For example: financial loss, account takeover, exposure of confidential information, a data breach or disruption of operations.
+
+Then ask:
+
+> What exposed information could make that easier?
+
+Public information matters when it helps create an attack path.
+
+## What is exposed?
+
+Use public or explicitly authorized sources.
+
+Useful information often reveals one or more of these:
 
 - an **identity**;
 - an **access** or capability;
@@ -10,85 +38,55 @@ Information becomes dangerous when it reveals one of five things:
 - a **relationship** that can be abused;
 - a **place** or precise **time**.
 
-## 1. What matters?
+Sources may include public profiles, company websites, press releases, conference programs, job advertisements, public documents, code repositories and technical databases.
 
-Start with the threat, the attacker's objective and the potential impact, not the search engine.
+Record facts, not interpretations.
 
-Ask:
+Public AI services can help find connections, but an AI answer is not evidence. Trace useful information back to its original source.
 
-- **Threat — What are we protecting against?**  
-  For example: impersonation, credential theft, fraud, unauthorized access or targeted social engineering.
+For professional networks, search engines, contact-data services and AI-assisted correlation, see [Professional identity exposure](professional-identity-exposure.md).
 
-- **Objective — What is the attacker trying to achieve?**  
-  For example: impersonate someone, obtain privileged access, trigger a fraudulent payment or reach a production environment.
+## What can be connected?
 
-- **Impact — What could happen if they succeed?**  
-  For example: account takeover, financial loss, exposure of confidential information, a large-scale data breach or disruption of operations.
+A single fact may mean very little.
 
-Then ask:
+The interesting part is what becomes possible when several facts are connected.
 
-> What exposed information could help make that attack possible?
+Think in short chains:
 
-This turns public exposure into a risk question:
+`public information → useful context → attack path → impact`
 
-`threat → objective → exposed information → attack path → impact`
+For example:
 
-The goal is not to collect as much information as possible.
+`conference agenda → named IAM administrator → employer and travel date → credible support impersonation`
 
-The goal is to identify which exposed information meaningfully increases risk.
+Keep facts and assumptions separate.
 
-## 2. What is visible?
+If an important conclusion depends on an assumption, verify it.
 
-Use only public or explicitly authorized sources:
+## What should change?
 
-- search engines and public profiles;
-- company websites, biographies and press releases;
-- conference programs and public calendars;
-- job advertisements and supplier pages;
-- public code repositories and technical databases;
-- images, documents and metadata intentionally available online.
+Do not try to remove everything.
 
-Record the source, date and exact fact. A fact is not an interpretation.
+Change what meaningfully reduces risk.
 
-Public AI services can reveal useful leads or connections, but they can also invent them. Record the original source and never treat an AI answer as evidence on its own.
+That may mean:
 
-## Professional identity exposure
+- removing information that has no useful public value;
+- separating personal and professional identities;
+- restricting visibility;
+- reducing unnecessary detail;
+- delaying posts about travel, events or locations;
+- verifying sensitive requests through another trusted channel.
 
-Professional profiles are only one part of a person's public information surface.
+The goal is not invisibility.
 
-Information from professional connections, contact-data providers, search engines, public documents and AI services can be correlated to reveal much more than any single profile.
-
-Privacy settings reduce exposure, but they do not guarantee invisibility.
-
-See [Professional identity exposure](professional-identity-exposure.md) for practical guidance on professional networks, relationship visibility, contact discovery, search-engine persistence, AI aggregation and impersonation risk.
-
-## 3. What can be connected?
-
-Build short chains:
-
-`public source → person or role → access, relationship, place or time → possible consequence`
-
-Example:
-
-`conference agenda → named IAM administrator → travel date and employer → credible support pretext`
-
-Write assumptions as assumptions. Confirm them with a second independent source before treating them as reliable.
-
-## 4. What do we change now?
-
-Choose the smallest useful action:
-
-- **remove** information that has no public value;
-- **separate** personal and professional identities;
-- **delay** posts about travel, events or locations;
-- **reduce** unnecessary detail in biographies, documents and job adverts;
-- **verify** sensitive requests through a second channel;
-- **prepare** a contact and response plan.
-
-Use the [exposure review template](../templates/exposure-review.md) to keep the result short.
+The goal is to make useful attack paths harder.
 
 ## What is not OSINT?
 
-Stolen data, compromised accounts, access-controlled sources and deception-based collection are not open-source intelligence. Physical surveillance is not OSINT either, even when it is used to confirm an online hypothesis.
+Stolen data, compromised accounts, access-controlled sources and deception-based collection are not open-source intelligence.
 
-The boundary matters: this project helps people reduce exposure; it does not teach someone how to target them.
+Physical surveillance is not OSINT either, even when it is used to confirm an online hypothesis.
+
+The boundary matters: this project helps people understand and reduce exposure; it does not teach someone how to target them.
