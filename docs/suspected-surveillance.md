@@ -26,7 +26,7 @@ Keep simple habits:
 - be aware of what is visible on laptop and phone screens, and use a privacy filter when appropriate;
 - avoid displaying badges, documents or other information that reveals unnecessary context;
 - lock your workstation whenever you leave it unattended — `Win + L` on Windows or `Control + Command + Q` on macOS is a good rule of thumb;
-- treat public or unknown Wi-Fi networks as untrusted and avoid sensitive activity unless the connection is appropriately protected.
+- treat public or unknown Wi-Fi networks as untrusted and avoid sensitive activity unless the connection is appropriately protected, or use a trusted VPN for sensitive activity
 
 The point is not to become suspicious of everyone around you.
 
@@ -44,7 +44,7 @@ Do not confront someone you suspect of observing or following you.
 
 If you feel unsafe, move toward a safe public place and contact someone you trust or the appropriate authorities.
 
-In France, call **17** or **112** in case of immediate danger.
+In France, call **17** r **112** in case of immediate danger.
 
 ## Scope
 
