@@ -4,7 +4,19 @@ Surveillance is a way of collecting information about a person, place, activity 
 
 It may involve observation from a fixed position or following someone on foot or by vehicle.
 
-The objective is information.
+The objective is gathering information.
+
+## What surveillance can look like
+
+Surveillance is not always obvious.
+
+Someone observing a person may not remain directly behind them, and vehicle surveillance may involve more than one vehicle.
+
+A single person or car appearing twice is not evidence of surveillance.
+
+Look for repeated, consistent observations over time rather than isolated coincidences.
+
+Do not try to test or challenge a suspected surveillance pattern yourself.
 
 ## Observation is not proof
 
