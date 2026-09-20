@@ -1,6 +1,6 @@
 # MITRE ATT&CK mapping
 
-“PRE-ATT&CK” remains a useful way to describe what happens before initial access. In the current ATT&CK model, the closest tactics are [Reconnaissance — TA0043](https://attack.mitre.org/tactics/TA0043/) and [Resource Development — TA0042](https://attack.mitre.org/tactics/TA0042/). MITRE retired the PRE-ATT&CK domain in 2020 and moved its scope into the Reconnaissance and Resource Development tactics.
+MITRE retired the PRE-ATT&CK domain in 2020 and moved its scope into the Reconnaissance and Resource Development tactics.
 
 This project uses “PRE-ATT&CK” descriptively for the preparation that happens before initial access.
 
