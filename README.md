@@ -87,7 +87,7 @@ ATT&CK covers the cyber side. It does not fully model physical surveillance or p
 
 ## Scope
 
-This is a defensive project. It does not provide surveillance, concealment, evasion or intrusive collection procedures.
+This is a defensive project. It does not provide surveillance, concealment, evasion or intrusive collection procedures, and it's intended to help recognize the nature of surveillance, not to teach surveillance or counter-surveillance techniques.
 
 A strange observation is not proof of hostile surveillance. Record facts, look for corroboration, avoid profiling and do not confront. In France, call **17** or **112** in case of immediate danger.
 
