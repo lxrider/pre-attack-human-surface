@@ -22,7 +22,7 @@ Use only when something unusual may affect a person's safety. Do not use it to p
 
 ## Immediate action taken
 
--
+- **Action:**
 
 ## Writing rules
 
