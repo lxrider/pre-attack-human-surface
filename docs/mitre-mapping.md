@@ -12,7 +12,7 @@ This repository does not try to reproduce ATT&CK. It uses selected techniques to
 | Roles, projects, locations and business relationships | [T1591 — Gather Victim Org Information](https://attack.mitre.org/techniques/T1591/) | What does the organization reveal about authority and trust? |
 | Social media, news, public profiles and code | [T1593 — Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593/) | Which public sources reveal people, habits or technology? |
 | Company pages and public documents | [T1594 — Search Victim-Owned Websites](https://attack.mitre.org/techniques/T1594/) | What do our own websites disclose? |
-| Internet-facing services | [T1595 — Active Scanning](https://attack.mitre.org/techniques/T1595/) | Which systems or accounts can be discovered from outside? |
+| Internet-facing services | [T1595 — Active Scanning](https://attack.mitre.org/techniques/T1595/) | On owned or explicitly authorized infrastructure, what can direct external probing reveal? |
 | DNS, certificates, registration data and other open datasets | [T1596 — Search Open Technical Databases](https://attack.mitre.org/techniques/T1596/) | Which technical links are visible without touching the target? |
 | Commercial or restricted datasets | [T1597 — Search Closed Sources](https://attack.mitre.org/techniques/T1597/) | Which exposures exist beyond public search, and who is authorized to review them? |
 | Information aggregated by public AI services | [T1682 — Query Public AI Services](https://attack.mitre.org/techniques/T1682/) | Can the answer be traced to an original source, or is it only an unverified lead? |
