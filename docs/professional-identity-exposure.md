@@ -10,7 +10,7 @@ The objective is not to disappear from the Internet.
 
 It is to control what is visible, to whom, and for how long.
 
-## 1. Think in attack paths / Mindest
+## 1. Think in attack paths
 
 Do not review a professional profile as a collection of isolated fields.
 
