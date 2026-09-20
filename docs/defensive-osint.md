@@ -12,9 +12,16 @@ Information becomes dangerous when it reveals one of five things:
 
 ## 1. What matters?
 
-Start with the consequence, not the search engine.
+Start with the attacker's objective and the impact it could create, not the search engine.
 
-Examples: approving a payment, resetting privileged access, reaching a production environment, protecting a confidential meeting or keeping a family address private.
+Ask:
+
+- What is the attacker trying to achieve?
+- What would that mean for the person or the organization?
+
+Examples: getting a fraudulent payment approved, taking over privileged access, reaching a production environment, learning details of a confidential meeting or identifying a private home address.
+
+Then ask what exposed information could help make that possible.
 
 ## 2. What is visible?
 
