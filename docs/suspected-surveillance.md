@@ -28,6 +28,12 @@ What matters is whether observations become repeated, consistent and difficult t
 
 Avoid profiling people based on appearance, clothing, origin or behaviour alone.
 
+People conducting surveillance may change clothing or appearance to make recognition more difficult.
+
+For that reason, clothing alone is not a reliable way to identify or confirm someone.
+
+Look for repeated, consistent observations and behaviour rather than a single visual detail.
+
 ## Public spaces and transport
 
 Public transport, airports, stations, hotels and other shared spaces can expose more information than expected.
