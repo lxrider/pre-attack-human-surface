@@ -12,16 +12,30 @@ Information becomes dangerous when it reveals one of five things:
 
 ## 1. What matters?
 
-Start with the attacker's objective and the impact it could create, not the search engine.
+Start with the threat, the attacker's objective and the potential impact, not the search engine.
 
 Ask:
 
-- What is the attacker trying to achieve?
-- What would that mean for the person or the organization?
+- **Threat — What are we protecting against?**  
+  For example: impersonation, credential theft, fraud, unauthorized access or targeted social engineering.
 
-Examples: getting a fraudulent payment approved, taking over privileged access, reaching a production environment, learning details of a confidential meeting or identifying a private home address.
+- **Objective — What is the attacker trying to achieve?**  
+  For example: impersonate someone, obtain privileged access, trigger a fraudulent payment or reach a production environment.
 
-Then ask what exposed information could help make that possible.
+- **Impact — What could happen if they succeed?**  
+  For example: account takeover, financial loss, exposure of confidential information, a large-scale data breach or disruption of operations.
+
+Then ask:
+
+> What exposed information could help make that attack possible?
+
+This turns public exposure into a risk question:
+
+`threat → objective → exposed information → attack path → impact`
+
+The goal is not to collect as much information as possible.
+
+The goal is to identify which exposed information meaningfully increases risk.
 
 ## 2. What is visible?
 
@@ -37,6 +51,16 @@ Use only public or explicitly authorized sources:
 Record the source, date and exact fact. A fact is not an interpretation.
 
 Public AI services can reveal useful leads or connections, but they can also invent them. Record the original source and never treat an AI answer as evidence on its own.
+
+## Professional identity exposure
+
+Professional profiles are only one part of a person's public information surface.
+
+Information from professional connections, contact-data providers, search engines, public documents and AI services can be correlated to reveal much more than any single profile.
+
+Privacy settings reduce exposure, but they do not guarantee invisibility.
+
+See [Professional identity exposure](professional-identity-exposure.md) for practical guidance on professional networks, relationship visibility, contact discovery, search-engine persistence, AI aggregation and impersonation risk.
 
 ## 3. What can be connected?
 
