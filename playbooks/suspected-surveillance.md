@@ -2,6 +2,23 @@
 
 A strange observation is not proof. The priority is safety, factual reporting and corroboration — not confrontation.
 
+## What surveillance can look like
+
+Surveillance is primarily about collecting information.
+
+It may involve:
+
+- observing a person, place or vehicle from a fixed position;
+- following someone on foot or by vehicle;
+- noting movements, contacts, locations and routines;
+- combining physical observations with information already available from public or other lawful sources.
+
+Professional surveillance is normally designed to remain unobtrusive. A single unusual person or vehicle is therefore not evidence of surveillance.
+
+Look for repeated, consistent observations over time rather than isolated coincidences.
+
+This section is intended to help recognize the nature of surveillance, not to teach surveillance or counter-surveillance techniques.
+
 ## If danger may be immediate
 
 1. Do not confront or try to identify the person yourself.
