@@ -77,6 +77,8 @@ It does not try to reproduce ATT&CK.
 
 ATT&CK is a reference here, not the method.
 
+Part of this perspective also comes from my experience in private investigation, where separating observation from interpretation, understanding how information is collected, and connecting facts carefully are essential.
+
 ## Scope
 
 This is a defensive project.
