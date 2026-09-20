@@ -14,7 +14,7 @@ It is to control what is visible, to whom, and for how long.
 
 Do not review a professional profile as a collection of isolated fields.
 
-Ask what someone could understand by combining them, such as collecting enouth data to impersonate your identity and to betray someone's trust
+Ask what someone could understand by combining them, such as collecting enough information to impersonate you or abuse someone else's trust.
 
 A profile, post or public document may reveal:
 
@@ -143,9 +143,9 @@ Removing an email address or telephone number from a social profile does not gua
 
 Contact-data and sales-intelligence services aggregate professional information from multiple sources.
 
-Linkedin Third party services may associate professional profiles with email addresses, telephone numbers and other contact information.
+Third-party services may associate professional profiles with email addresses, telephone numbers and other contact information.
 
-Other services, can find professional email addresses from public sources or infer likely addresses from known email patterns used by an organization and then attempt to verify them.
+Other services can find professional email addresses from public sources or infer likely addresses from known email patterns used by an organization and then attempt to verify them.
 
 Information may also remain available through:
 
