@@ -2,39 +2,48 @@
 
 This example is fictional.
 
-## 1. What matters?
+## What matters?
 
-- **Person or role:** Lina Martin, identity and access administrator.
-- **Resource:** privileged account recovery and production access.
-- **Consequence:** a credible approach could pressure support staff into bypassing normal verification.
+**Threat** — targeted social engineering or impersonation.
 
-## 2. What is visible?
+**Objective** — obtain privileged access or convince support to bypass normal verification.
 
-| Public source | Observed fact | Date checked |
-| --- | --- | --- |
-| Conference website | Lina is speaking about the company's identity platform on Thursday. | 10 May |
-| Public professional profile | Her job title and employer are visible. | 10 May |
-| Public code profile | The same username links her name to identity tooling. | 10 May |
-| Public social post | A station photo was posted before departure. | 10 May |
+**Impact** — account takeover or unauthorized access to production systems.
 
-## 3. What can be understood or prepared?
+## What is exposed?
 
-| Connected facts | Confidence | Possible consequence |
-| --- | --- | --- |
-| Name + role + talk topic | Fact | A caller can sound informed about her responsibilities. |
-| Talk date + departure post | Likely | Her absence and travel window may be inferred. |
-| Reused username | Fact | Personal and technical identities are easy to connect. |
+Public information shows that Lina Martin is an identity and access administrator.
 
-Most important chain:
+A conference page reveals when she is speaking and what she is speaking about.
 
-`conference page → named IAM administrator → travel window → credible urgent support request`
+Her professional profile confirms her role and employer.
 
-## 4. What changes now?
+A public code profile uses the same username and links her identity to identity-related tooling.
 
-| Action | Owner | When |
-| --- | --- | --- |
-| Remove unnecessary travel detail from the public post. | Lina | Now |
-| Use a separate public username for non-work activity. | Lina | This month |
-| Remind support that privileged recovery never relies on role, urgency or travel context alone. | IAM lead | Before the event |
+A social post reveals that she is travelling to the event.
 
-The useful outcome is not a score. It is a broken connection and a verification step that people understand.
+None of these facts is particularly sensitive on its own.
+
+Together, they provide useful context.
+
+## What can be connected?
+
+The most useful chain is:
+
+`conference page → named IAM administrator → travel timing → credible urgent support impersonation`
+
+The reused username also makes professional and technical identities easier to connect.
+
+The travel post may reveal when she is away, but that remains an inference rather than a confirmed fact.
+
+## What should change?
+
+Remove unnecessary real-time travel information.
+
+Separate public identities where doing so provides useful friction.
+
+Most importantly, privileged account recovery should never rely on someone's role, urgency or knowledge of internal context as proof of identity.
+
+The useful outcome is not a score.
+
+It is fewer useful connections and a verification step that people understand.
