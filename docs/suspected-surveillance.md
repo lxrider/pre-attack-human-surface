@@ -24,15 +24,15 @@ Seeing the same person or vehicle once means very little.
 
 An unusual observation is not proof of hostile surveillance.
 
+People conducting surveillance may change clothing or appearance to make recognition more difficult.
+
+For that reason, clothing or appearance alone is not a reliable way to identify or confirm someone.
+
 What matters is whether observations become repeated, consistent and difficult to explain as coincidence.
 
 Avoid profiling people based on appearance, clothing, origin or behaviour alone.
 
-People conducting surveillance may change clothing or appearance to make recognition more difficult.
-
-For that reason, clothing alone is not a reliable way to identify or confirm someone.
-
-Look for repeated, consistent observations and behaviour rather than a single visual detail.
+Focus on observable facts and repeated patterns rather than isolated visual details.
 
 ## Public spaces and transport
 
@@ -44,7 +44,7 @@ Keep simple habits:
 - be aware of what is visible on laptop and phone screens, and use a privacy filter when appropriate;
 - avoid displaying badges, documents or other information that reveals unnecessary context;
 - lock your workstation whenever you leave it unattended — `Win + L` on Windows or `Control + Command + Q` on macOS is a good rule of thumb;
-- treat public or unknown Wi-Fi networks as untrusted and avoid sensitive activity unless the connection is appropriately protected, or use a trusted VPN for sensitive activity
+- treat public or unknown Wi-Fi networks as untrusted; prefer your mobile connection when possible, or use a trusted VPN for sensitive activity.
 
 The point is not to become suspicious of everyone around you.
 
@@ -62,7 +62,7 @@ Do not confront someone you suspect of observing or following you.
 
 If you feel unsafe, move toward a safe public place and contact someone you trust or the appropriate authorities.
 
-In France, call **17** r **112** in case of immediate danger.
+In France, call **17** or **112** in case of immediate danger.
 
 ## Scope
 
