@@ -1,156 +1,79 @@
-# PRE-ATT&CK Human Surface 🌐
+# PRE-ATT&CK Human Surface
 
-> What can an attacker learn before touching a system or sending the first message?
+**Laboratoire documentaire · Reconnaissance OSINT · Exposition humaine · Frontières de confiance**
 
-Security does not start at the firewall.
+[English version](README.en.md) · [Méthode](docs/demarche-osint-defensive.md) · [Exercice](examples/donnees-fictives-fr.md) · [Références](REFERENCES.md)
 
-Before an attack, information about people, roles, relationships, technologies,
-locations and timing may already be publicly available.
+> **Question de recherche :** comment des informations publiques, individuellement anodines, peuvent-elles contribuer à un scénario de compromission — et à quelles conditions ce scénario pourrait-il réellement produire un effet ?
 
-Individually, those details may seem harmless.
+Une information publique n'est pas une vulnérabilité. Une corrélation n'est pas une compromission. Ce laboratoire sert à **documenter les liens possibles entre exposition, capacités adverses, décisions sensibles et contrôles**, sans confondre constat, inférence et preuve.
 
-Connected together, they can make an attack much easier.
+**État du projet :** laboratoire d'analyse documentaire, avec jeu de données **entièrement fictif** et exemple corrigé. Aucun collecteur OSINT, scan de tiers ou exercice d'ingénierie sociale n'est requis.
 
-## The idea
+## Le problème, en un schéma
 
-Start with the problem, not the framework.
-
-Ask:
-
-- What has value?
-- What is the attacker trying to achieve?
-- What exposed information could help?
-- What can be connected?
-- What is worth changing?
-- Did the change actually make the useful attack path harder?
-
-That is enough.
-
-The goal is not to make people invisible.
-
-It is to understand which exposed information creates useful attack paths,
-reduce what actually matters and verify that the change has an effect.
-
-```text
-VALUE
-  ↓
-ATTACKER OBJECTIVE
-  ↓
-EXPOSURE
-  ↓
-CONNECTIONS
-  ↓
-ATTACK PATH
-  ↓
-ACTION
-  ↓
-PROOF
+```mermaid
+flowchart LR
+    V["Valeur à protéger"] --> O["Objectif adverse envisagé"]
+    S1["Source publique A"] --> C["Corrélation documentée"]
+    S2["Source publique B"] --> C
+    O -.-> H["Hypothèse de chemin d'attaque"]
+    C -.-> H
+    H -.-> F{"Frontière de confiance"}
+    F -->|"Contrôle indépendant"| I["Chemin interrompu"]
+    F -.->|"Contrôle non établi"| U["Conséquence potentielle, non démontrée"]
 ```
 
-## Start with value
+**Lecture :** les flèches pleines décrivent des relations documentées dans l'exercice ; les flèches pointillées représentent des **hypothèses** ou des conditions encore inconnues. Le schéma ne démontre pas qu'une attaque réussira.
 
-Before looking for exposed information, understand what matters.
+## Réaliser le laboratoire
 
-That may be:
+| Étape | Ce que vous produisez | Ressource |
+| --- | --- | --- |
+| **1. Cadrer** | Valeur, objectif adverse supposé et périmètre autorisé | [Démarche OSINT défensive](docs/demarche-osint-defensive.md) |
+| **2. Modéliser** | Acteurs, relations d'autorité et frontière de confiance | [Modèle de menace](docs/modele-de-menace-fr.md) |
+| **3. Observer** | Registre d'observations **synthétiques**, chacune avec ses limites | [Jeu de données fictives](examples/donnees-fictives-fr.md) |
+| **4. Analyser** | Hypothèses concurrentes, éléments contradictoires, inconnues | [Fiche d'analyse vierge](examples/fiche-analyse-fr.md) |
+| **5. Conclure** | Mesures, vérification envisagée, conclusion proportionnée | [Cas corrigé](examples/exemple-revue-fr.md) |
+| **6. Situer** | Correspondances ATT&CK sans assimiler technique et preuve | [Correspondance MITRE ATT&CK](docs/correspondance-mitre-fr.md) |
 
-- privileged access;
-- sensitive information;
-- money;
-- production systems;
-- authority to approve or change something;
-- personal safety;
-- business continuity.
+Pour approfondir : [exposition des identités professionnelles](docs/identites-professionnelles-fr.md). Les documents originaux en anglais restent accessibles depuis la [version anglaise](README.en.md).
 
-Public information only becomes interesting when it can help an attacker affect
-something that has value.
+## Des observations aux hypothèses
 
-## Keep security human and understandable
+```mermaid
+flowchart TB
+    A["OBS-01 : rôle annoncé dans un programme"] --> C["Croisement des observations"]
+    B["OBS-02 : responsabilité affichée sur un profil"] --> C
+    C --> D["Fait recoupé : fonction publique connue"]
+    D -.-> H1["H1 : contexte utile à un prétexte"]
+    D -.-> H2["H2 : aucun avantage décisif si contrôle indépendant"]
+    D -.-> H3["H3 : le vrai enjeu est la délégation d'autorité"]
+    H1 --> T["Rechercher ce qui contredit chaque hypothèse"]
+    H2 --> T
+    H3 --> T
+    T --> R["Conclusion : établie, plausible ou indéterminée"]
+```
 
-Security should not become a collection of controls or procedures nobody understands.
+La démarche est **contradictoire** : une hypothèse doit être exposée à des éléments susceptibles de l'infirmer, pas seulement alimentée en indices concordants.
 
-This project deliberately avoids turning defensive OSINT into another complicated
-methodology.
+## Discipline de preuve
 
-The useful output is not a bigger collection of information.
+| Étiquette | Ce qu'elle autorise à affirmer |
+| --- | --- |
+| **OBSERVÉ** | Le contenu exact apparaît dans une source examinée, à une date donnée. |
+| **DOCUMENTÉ** | Une capacité, un processus ou un contrôle est décrit par une référence vérifiable. |
+| **HYPOTHÈSE** | Une possibilité argumentée, accompagnée de conditions et de contradictions. |
+| **INCONNU** | Une information non établie, qui interdit une conclusion trop forte. |
 
-It is a better decision.
+Ne pas confondre **identité**, **fonction affichée**, **permission technique** et **autorité effectivement reconnue**. Une fonction indiquée publiquement ne prouve pas l'existence d'un accès privilégié.
 
-Remove something.
+## Cadre, limites et attribution
 
-Restrict it.
+Le dépôt est **défensif** et repose uniquement sur des sources publiques ou des informations examinées dans un cadre explicitement autorisé. Les exercices utilisent des données fabriquées. Pas de sollicitation de personnes, de surveillance physique, de collecte intrusive ni de tentative de contournement. Voir la [politique de sécurité](SECURITY.md).
 
-Separate it.
+Le nom **PRE-ATT&CK** est descriptif et historique : MITRE a retiré le domaine distinct en octobre 2020, dont le périmètre a été repris principalement par *Reconnaissance* et *Resource Development*. Il ne s'agit ni d'un référentiel officiel MITRE, ni d'une reproduction d'ATT&CK. [Source MITRE](https://attack.mitre.org/resources/updates/updates-october-2020/).
 
-Delay it.
+**Principe de sortie :** une décision justifiée, un contrôle à examiner et une limite explicite — pas une accumulation de données personnelles.
 
-Verify something differently.
-
-Or decide that the exposure is acceptable and leave it alone.
-
-Then ask:
-
-> Did the change actually reduce the useful attack path?
-
-## Documentation
-
-### [Defensive OSINT](docs/defensive-osint.md)
-
-A simple way to connect business value, attacker objectives, public exposure,
-attack paths, impact and practical treatment.
-
-### [Professional identity exposure](docs/professional-identity-exposure.md)
-
-How professional networks, search engines, contact-data services and AI can
-combine information about people and organizations.
-
-### [Suspected surveillance: a safe response](docs/suspected-surveillance.md)
-
-A short defensive note on recognizing concerning patterns and responding safely
-without teaching surveillance or counter-surveillance techniques.
-
-### [MITRE ATT&CK mapping](docs/mitre-mapping.md)
-
-Selected ATT&CK Reconnaissance and Resource Development techniques related to
-the project.
-
-## Why PRE-ATT&CK?
-
-MITRE retired the PRE-ATT&CK domain in 2020 and moved its scope into the
-Reconnaissance and Resource Development tactics.
-
-This project uses "PRE-ATT&CK" descriptively for the preparation that happens
-before initial access.
-
-It does not try to reproduce ATT&CK.
-
-ATT&CK is a reference here, not the method.
-
-Part of this perspective also comes from my experience in private investigation,
-where separating observation from interpretation, understanding how information
-is collected and connecting facts carefully are essential.
-
-## Scope
-
-This is a defensive project.
-
-It focuses on publicly available or explicitly authorized information and on
-practical ways to reduce unnecessary exposure.
-
-It does not provide procedures for intrusive collection, surveillance,
-concealment, evasion or targeting people.
-
-## One principle
-
-> Do not collect information because you can. Understand why it matters.
-
-Start with the value.
-
-Observe what is exposed.
-
-Connect only what matters.
-
-Reduce useful attack paths.
-
-Verify the result.
-
-## Build. Break. Understand. Rebuild better.
+[Licence CC BY 4.0](LICENSE) · © 2026 lxrider · [Références et sources](REFERENCES.md)
