@@ -16,6 +16,7 @@ This repository does not try to reproduce ATT&CK. It uses selected techniques to
 | DNS, certificates, registration data and other open datasets | [T1596 — Search Open Technical Databases](https://attack.mitre.org/techniques/T1596/) | Which technical links are visible without touching the target? |
 | Commercial or restricted datasets | [T1597 — Search Closed Sources](https://attack.mitre.org/techniques/T1597/) | Which exposures exist beyond public search, and who is authorized to review them? |
 | Information aggregated by public AI services | [T1682 — Query Public AI Services](https://attack.mitre.org/techniques/T1682/) | Can the answer be traced to an original source, or is it only an unverified lead? |
+| Content generated to support social engineering or impersonation | [T1683 — Generate Content](https://attack.mitre.org/techniques/T1683/) | Do sensitive workflows rely on independently verified identity and authority? |
 | Domains, email accounts, infrastructure and personas prepared in advance | [TA0042 — Resource Development](https://attack.mitre.org/tactics/TA0042/) | Which clues make a malicious approach credible? |
 
 ## What ATT&CK does not cover well here
@@ -32,3 +33,6 @@ That gap is intentional in this project. Use ATT&CK to understand digital prepar
 ## The useful output
 
 Do not end with a technique ID. End with an action: remove, separate, delay, verify or prepare.
+
+
+[Lire la correspondance en français](correspondance-mitre-fr.md).
